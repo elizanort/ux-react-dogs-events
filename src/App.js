@@ -50,7 +50,7 @@ class App extends Component {
           <input
             type="text"
             value={this.state.newDog}
-            // onChange={this.handleInputChange}
+            onChange={this.handleInputChange}
           ></input>
           <button onClick={this.handleAddNewDog}>Add New Dog</button>
         </div>

@@ -37,7 +37,7 @@ class App extends Component {
     return (
       <div className="app">
         <Header numDogs={this.state.dogs.length} />
-        <h2>My Dogs</h2>
+        <h2>Pet My Dogs</h2>
         <ul className="dogList">
           {this.state.dogs.map((dog, index) => (
             <li key={index}>
@@ -50,7 +50,7 @@ class App extends Component {
           <input
             type="text"
             value={this.state.newDog}
-            onChange={this.handleInputChange}
+            // onChange={this.handleInputChange}
           ></input>
           <button onClick={this.handleAddNewDog}>Add New Dog</button>
         </div>
